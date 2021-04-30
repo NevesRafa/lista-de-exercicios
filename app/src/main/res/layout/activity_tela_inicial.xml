@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaInicialActivity">
+
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#517C4DFF"
+        android:fontFamily="casual"
+        android:paddingLeft="16dp"
+        android:text="Exercícios"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/conversorTemperatura"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:backgroundTint="#7C4DFF"
+        android:fontFamily="casual"
+        android:text="Conversor de Temperatura"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/conversorTemperatura"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titulo"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <Button
+        android:id="@+id/aumentoSalario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:backgroundTint="#7C4DFF"
+        android:fontFamily="casual"
+        android:text="Aumento de Salário"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/conversorTemperatura"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <Button
+        android:id="@+id/calculaArea"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:backgroundTint="#7C4DFF"
+        android:fontFamily="casual"
+        android:text="Calculadora de Área"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/aumentoSalario"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <Button
+        android:id="@+id/condicao2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:backgroundTint="#7C4DFF"
+        android:fontFamily="casual"
+        android:text="Encontre o Dobro e o triplo"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/calculaArea"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <Button
+        android:id="@+id/litosGasolina"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:backgroundTint="#7C4DFF"
+        android:fontFamily="casual"
+        android:text="Litros de \n Gasolina"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/condicao2"
+        app:layout_constraintWidth_percent="0.5" />
+</androidx.constraintlayout.widget.ConstraintLayout>

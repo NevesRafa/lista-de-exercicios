@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/temperatura">
+
+    <TextView
+        android:id="@+id/tituloTemperatura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:padding="8dp"
+        android:text="Conversor de"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tituloTemperatura2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:padding="8dp"
+        android:text="Temperatura"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tituloTemperatura" />
+
+
+    <Button
+        android:id="@+id/botaoCelsius"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="24dp"
+        android:layout_marginRight="12dp"
+        android:backgroundTint="#7C4DFF"
+        android:fontFamily="casual"
+        android:text="Celsius (°C)"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/resultado"
+        app:layout_constraintEnd_toStartOf="@id/botaoFahrenheit"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="@id/conversor"
+        app:layout_constraintTop_toBottomOf="@id/conversor" />
+
+    <Button
+        android:id="@+id/botaoFahrenheit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:backgroundTint="#7C4DFF"
+        android:fontFamily="casual"
+        android:text="Fahrenheit (°F)"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/resultado"
+        app:layout_constraintEnd_toEndOf="@id/conversor"
+        app:layout_constraintStart_toEndOf="@id/botaoCelsius"
+        app:layout_constraintTop_toBottomOf="@id/conversor" />
+
+    <EditText
+        android:id="@+id/conversor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:background="@color/white"
+        android:digits="0123456789,."
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:hint="Digite o valor que deseja coverter"
+        android:inputType="numberDecimal"
+        android:padding="8dp"
+        app:layout_constraintBottom_toTopOf="@id/botaoCelsius"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:background="@color/white"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/botaoCelsius" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
