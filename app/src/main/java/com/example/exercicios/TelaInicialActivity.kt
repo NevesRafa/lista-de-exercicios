@@ -3,6 +3,7 @@ package com.example.exercicios
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.exercicios.aumento_salario.AumentoSalarioAcitivity
 import com.example.exercicios.conversor_temperatura.ConversorTemperaturaActivity
 import com.example.exercicios.databinding.ActivityTelaInicialBinding
 
@@ -18,6 +19,12 @@ class TelaInicialActivity : AppCompatActivity() {
         telaInicial.conversorTemperatura.setOnClickListener {
 
             val intent = Intent(this, ConversorTemperaturaActivity::class.java)
+            startActivity(intent)
+        }
+
+        telaInicial.aumentoSalario.setOnClickListener {
+
+            val intent = Intent(this, AumentoSalarioAcitivity::class.java)
             startActivity(intent)
         }
     }

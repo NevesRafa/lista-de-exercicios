@@ -3,7 +3,7 @@ package com.example.exercicios.conversor_temperatura
 import org.junit.Assert.assertEquals
 import org.junit.Test
 
-class ConversorTemperaturaPresenterTest() {
+class ConversorTemperaturaPresenterTest {
     @Test
     fun testFormulaCelsius() {
 
